@@ -1,0 +1,27 @@
+package dice_program;
+
+import java.util.Random;
+public class diceRolls 
+{
+    //declaration
+	public static void main (String []args)
+	{
+		Random dice =new Random();
+		
+		int number;
+		
+		//within this loop the random number is generated
+		for (int x=0;  x <10 ; x++ ) 
+			{
+				number = dice.nextInt(6) +1;
+				
+				System.out.println("Result for roll number "+ (1+x) +" is " + number );
+				
+				
+			}
+			
+		
+					
+	}
+	
+}
